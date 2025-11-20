@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+        }
+        .result{
+            color: brown;
+        }
+        button{
+            background-color: aqua;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            border-color: rgb(0, 38, 255);
+        }
+    </style>
+</head>
+<body>
+
+    <p> <<<< Let's Play The Game >>>></p>
+    <button onclick="play('rock')">Rock</button>
+    <button onclick="play('paper')">Paper</button>
+    <button onclick="play('scissor')">Scissor</button>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

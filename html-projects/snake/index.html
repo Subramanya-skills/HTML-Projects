@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Snake</title>
+  <link rel="stylesheet" href="snake.css">
+</head>
+<body>
+  <main>
+    <h1>Snake</h1>
+
+    <div class="controls">
+      <button id="startBtn">Start</button>
+      <button id="pauseBtn">Pause</button>
+      <button id="newBtn">New Game</button>
+      <label for="speed">Speed</label>
+      <select id="speed">
+        <option value="200">Slow</option>
+        <option value="120" selected>Normal</option>
+        <option value="70">Fast</option>
+      </select>
+      <div id="scoreWrap">Score: <span id="score">0</span> | High: <span id="highScore">0</span></div>
+    </div>
+
+    <div id="gameArea">
+      <canvas id="game" width="360" height="360"></canvas>
+      <div id="instructions">Use arrow keys (or WASD) to move. Don't run into walls or yourself.</div>
+      <div id="message" aria-live="polite"></div>
+    </div>
+
+  </main>
+  <script src="snake.js"></script>
+</body>
+</html>
